@@ -1,0 +1,253 @@
+/* Basic Styles, Typography ---------------------------- */
+
+* {
+    box-sizing: border-box;
+}
+
+h1,
+h2, 
+h3, 
+h4, 
+h5, 
+h6
+ {
+    font-family: 'Solway', serif;
+}
+
+h1 {
+    font-size: 1.8em;
+}
+
+h2 {
+    font-size: 1.3em;
+    text-transform: uppercase;
+    padding: 2em 0;
+    margin-bottom: 0;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+h4 {
+    font-size: 1.3em;
+}
+
+p,
+li,
+a {
+    font-family: 'Roboto', sans-serif;
+    color: #222;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+header,
+.intro,
+#contact,
+footer {
+    background-color: #f6f6f6;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+/* Header and Main Nav ---------------------------- */
+
+header h1 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-top: 0px;
+}
+
+.main-nav ul {
+    padding-left: 0px;
+}
+
+.main-nav li {
+    list-style-type: none;
+    margin: 6px 0;
+    text-align: center;
+}
+
+.main-nav li a {
+    display: block;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    background-color: #fff;
+    padding: 10px 0;
+    font-weight: bold;
+}
+
+/* Intro section ------------------------- */
+
+.intro {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    text-align: center;
+}
+
+.intro p {
+    font-size: 1.3em;
+}
+
+.intro img {
+    max-width: 260px;
+}
+
+/* Portfolio section ---------------------- */
+
+#portfolio {
+    margin-top: 3em;
+    background-color: #FFF;
+    text-align: center;
+    padding-bottom: 2em;
+}
+
+#portfolio h3,
+#portfolio p {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+#portfolio img {
+    margin: 20px auto;
+}
+
+/* Contact section ----------------------- */
+
+#contact {
+    text-align: center;
+    margin-top: 3em;
+    padding-bottom: 3em;
+}
+
+#contact p {
+    font-size: 1.3em;
+}
+
+.phone {
+    margin-top: 2em;
+}
+
+.email {
+    margin-bottom: 0px;
+}
+
+/* Footer ------------------------------- */
+
+footer {
+    border-top: 1px solid #ccc;
+}
+
+footer h4 {
+    float: left;
+}
+
+footer p {
+    float: right;
+    padding-top: 1em;
+}
+
+/* Media Queries ------------------------ */
+
+@media (min-width: 768px) {
+    .main-nav ul,
+    footer nav ul {
+        margin: 0px auto;
+        text-align: center;
+    }
+    
+    .main-nav li,
+    footer nav li {
+        list-style-type: none;
+        margin: 6px 0;
+        display: inline-block;
+    }
+    
+    .main-nav li a {
+        background-color: transparent;
+        padding: 1em;
+    }
+
+    .intro {
+        text-align: left;
+    }
+
+    .intro img {
+        float: right;
+        padding-left: 1em;
+    }
+
+    #portfolio {
+        padding-right: 1em;
+        padding-left: 1em;
+    }
+
+    #portfolio article {
+        width: 50%;
+        float: left;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #contact div {
+        margin: 0px auto;
+        max-width: 560px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .wrapper {
+        width: 80%;
+        margin: 0 auto;
+        max-width: 1130px;
+    }
+    body {
+        background-color: #f6f6f6;
+    }
+    header {
+        padding-top: 1em;
+    }
+    
+    header h1 {
+        float: left;
+    }
+
+    .main-nav,
+    footer nav {
+        float: right;
+    }
+    
+    .intro img {
+        max-width: 400px;
+    }
+
+    #portfolio article {
+        width: 33.33333333333333333333%;
+    }
+    #backtop {
+        display: none;
+    }
+    footer nav {
+        margin-top: 28px;
+    }
+    footer nav li {
+        padding-left: 1em;
+    }
+    
+}
